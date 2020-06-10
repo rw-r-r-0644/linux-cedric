@@ -341,7 +341,4 @@ reserved-memory {
 	pinctrl-names = "default", "sleep";
 	pinctrl-0 = <&sdc2_on>;
 	pinctrl-1 = <&sdc2_off>;
-
-	cd-gpios = <&msmgpio 67 0>;
-	status = "ok";
 };
