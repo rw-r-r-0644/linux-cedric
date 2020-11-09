@@ -433,7 +433,7 @@
 
 		pwrkey {
 			linux,code = <KEY_ENTER>;
-		};z
+		};
 	};
 };
 
