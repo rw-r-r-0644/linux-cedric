@@ -58,7 +58,7 @@ reserved-memory {
             vdd-supply = <&vdda_touch>;
             vio-supply = <&pm8937_l6>;
             gpios = <&msmgpio 65 0>,
-			<&msmgpio 64 GPIO_ACTIVE_HIGH>;
+			<&msmgpio 64 0>;
 
             pinctrl-names = "init", "suspend";
             pinctrl-0 = <&ts_reset &touch_int_default>;
