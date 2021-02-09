@@ -313,7 +313,7 @@ reserved-memory {
 	vdda_touch: regulator-vdda_touch {
 		compatible = "regulator-fixed";
 		regulator-name = "vdda_touch";
-		gpio = <&msmgpio 64 0>;
+		gpio = <&msmgpio 59 0>;
 		startup-delay-us = <300>;
 		enable-active-high;
 		regulator-boot-on;
