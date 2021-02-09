@@ -58,7 +58,7 @@ reserved-memory {
             vdd-supply = <&vdda_touch>;
             vio-supply = <&pm8937_l6>;
             gpios = <&msmgpio 65 0>,
-			<&msmgpio 64 GPIO_ACTIVE_HIGH>;
+			<&msmgpio 64 0>;
 
             pinctrl-names = "init", "suspend";
             pinctrl-0 = <&ts_reset &touch_int_default>;
@@ -313,7 +313,7 @@ reserved-memory {
 	vdda_touch: regulator-vdda_touch {
 		compatible = "regulator-fixed";
 		regulator-name = "vdda_touch";
-		gpio = <&msmgpio 64 0>;
+		gpio = <&msmgpio 59 0>;
 		startup-delay-us = <300>;
 		enable-active-high;
 		regulator-boot-on;
@@ -346,7 +346,7 @@ reserved-memory {
       interrupts = <0x0 0x8 1 IRQ_TYPE_EDGE_BOTH>;
       bias-pull-up;
       label = "Volume Up";
-      gpios = <&msmgpio 91 GPIO_ACTIVE_LOW>;
+      gpios = <&msmgpio 0x73 GPIO_ACTIVE_LOW>;
       linux,code = <KEY_UP>;
     };
 	};
@@ -410,6 +410,10 @@ reserved-memory {
 			bias-pull-up;
 			//linux,code = <KEY_VOLUMEDOWN>;
 			linux,code = <KEY_DOWN>;
+		};
+
+		pwrkey {
+			linux,code = <KEY_ENTER>;
 		};
 	};
 };
