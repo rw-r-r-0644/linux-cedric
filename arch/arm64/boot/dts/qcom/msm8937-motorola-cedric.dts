@@ -10,7 +10,8 @@
 / {
 	model = "cedric";
 	compatible = "qcom,msm8937-cedric", "qcom,msm8937-moto", "qcom,msm8937";
-	qcom,msm-id = <294 66 0 0x10000>;
+	qcom,msm-id = <0x126 0x0>;
+	qcom,board-id = <0x10008 0x0>;
 };
 
 / {
